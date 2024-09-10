@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe 
+	id="demo"
+	src="https://drive.google.com/file/d/1SCUsupU7d9tlMr1SJ7E-A2EJKeGj_h_q/preview"
+	allow="autoplay"
+	margin="0"
+></iframe>
+
+<style> 
+	* {
+ 		 margin: 0;
+ 		 padding: 0;
+ 		 border: 0;
+	}
+</style>
+
+
+<script>
+	ajusteIframe();
+	
+	function ajusteIframe() {
+		document.getElementById("demo").width = window.innerWidth;
+		document.getElementById("demo").height = window.innerHeight;
+	}
+	
+	window.onresize = ajusteIframe;
+	
+</script>
+
+
+</body>
+</html>
